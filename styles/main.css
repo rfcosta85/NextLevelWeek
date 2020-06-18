@@ -164,7 +164,7 @@ h1,h2,h3,h4,h5,h6{
 
         position: absolute;
         bottom: 48px;
-        left: 50px;   
+        left: 50%;   
         transform: translateX(-50%);     
     }
 
