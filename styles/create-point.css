@@ -1,0 +1,124 @@
+#page-create-point {
+
+    width: 90%;
+    max-width: 1100px;    
+    margin: 0 auto; /*Alinhamento de caixa (pelo lado de fora da caixa)*/
+}
+
+#page-create-point header {
+
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-create-point header a {
+
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#page-create-point header a span {
+
+    margin-right: 16px;
+    background-image: url('../assets/arrow-left.svg');
+    display: flex;
+    width: 20px;
+    height: 24px;
+}
+
+form {
+
+    background-color: white;
+    margin: 80px;
+    margin-top: 80px;
+    padding: 64px; /*preenchimento interno da caixa*/
+    border-radius: 8px; /*cria uma borda arredonda*/
+    max-width: 730px;
+    
+
+}
+
+form h1 {
+
+    font-size: 36px;
+}
+
+form fieldset {
+
+    margin-top: 64px;
+    border: 0;
+}
+
+form legend {
+
+    margin-bottom: 40px;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form .field {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column; /*Aqui os elementos precisam seguir a idea das colunas*/
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input, 
+form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+
+    /*O Outline vem como padrão no navegador, ele deixa o fundo escuro para sabermos que é um campo a ser preenchido, podemos retirar a vontade.*/
+}
+
+form select {
+
+    -webkit-appearance: none; /*Aqui usamos isso pois o Chrome não irá aplicar o estilo do form select acima*/
+    -moz-appearance: none; /*Aqui usamos isso pois o Firefox não irá aplicar o estilo do form select acima*/
+    appearance: none; /*Então todas as opções que usamos nesse seletor, irá tirar toda a parte do Browse que utiliza um estilo padrão.*/
+}
+
+form label {
+
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field {
+
+    /*Aqui form.field-group . field se referencia ao Endereço e o + .field ao número/Complemento. Ao aplicarmos nosso estilo aqui, ele estará se referenciando ao + .field*/
+    margin-left: 24px; 
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 40px;
+    transition: background-color 400ms; /*O transition faz a transição de estilos quando passamos o mouse em cima, onde ocorre a mudança de cor que definimos abaixo em form button hover.*/
+}
+
+form button:hover {
+
+    /*O hover é o efeito de quando passamos o mouse em cima*/
+    background-color: #2fb86e;
+}
